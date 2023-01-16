@@ -34,6 +34,7 @@ body{
     /*atalho*/
     background: var(--bg-url)
     no-repeat top center /cover;
+    height: 100vh;
 }
 body *{
     font-family: 'Inter', sans-serif;
@@ -151,4 +152,17 @@ ul{
  #social-links a:hover{
     background: var(--highlight-color);
      
+ }
+
+ /*Media queries*/
+ /*Troca os planos de fundo de acordo com a
+ largura mim definida na tela*/
+
+ @media (min-width: 700px){
+    :root{
+        --bg-url: url(./assets/Background-dark-mode.jpg)
+    }
+    .light{
+        --bg-url: url(./assets/Background-light-mode.jpg)
+    }
  }
