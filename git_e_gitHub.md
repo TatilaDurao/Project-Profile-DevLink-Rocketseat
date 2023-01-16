@@ -8,3 +8,7 @@ git commit -m "first commit"
 
 git push - envia as alterações para o repositorio remoto 
 
+git remote add origin https://github.com/TatilaDurao/Project-Profile-DevLink-Rocketseat.git
+git branch -M main
+git push -u origin main
+
