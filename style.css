@@ -85,13 +85,17 @@ body *{
     /*Ajusta as camadas dos elementos*/
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-back 0.2s;
 }
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    /* mantenha as propriedades que eu defini forwards no to*/
+   animation: slide-in 0.4s forwards;
 }
 
+#switch button:hover{
+    outline: 8px solid var(--highlight-color) ;
+}
 #switch span{
     display: block;
     width: 64px;
@@ -164,5 +168,25 @@ ul{
     }
     .light{
         --bg-url: url(./assets/Background-light-mode.jpg)
+    }
+ }
+
+ /*animation*/
+
+ @keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+ }
+
+ @keyframes slide-back{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
     }
  }
