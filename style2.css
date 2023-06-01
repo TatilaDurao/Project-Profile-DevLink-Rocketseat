@@ -1,0 +1,56 @@
+*{
+    /*zerar as margins e preenchimentos auomaticos que o navegador coloca*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tamanho da caixa seja medido pelo tamanho da borda
+     pegando o valor e mantendo a largura definida */
+}
+:root {
+    --text-color: white;
+    --bg-url: url(./assets/Darkmode.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(255, 255, 255, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.1);
+    --switch-bg-url: url(./assets/moon-stars.svg);
+ 
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(./assets/Lightmode.jpg); 
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.1);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/sun.svg);
+}   
+
+body{
+    /* background-image: url(./assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
+     background-repeat: no-repeat;
+     background-position: top center;
+     background-size: cover; /*cobrir */
+     /*atalho*/
+     background: var(--bg-url)
+     no-repeat top center /cover;
+     height: 100vh;
+ }
+ body *{
+     font-family: 'Inter', sans-serif;
+     color: var(--text-color);
+ }
+ h1{
+    font-size: 20;
+    margin-left: 30px;
+ }
+
+#container{
+    /* border: 1px solid red;*/
+     width: 100%;
+     max-width: 1200px;
+     margin: 56px auto 0px auto; /*direção relogio top right bottom left*/
+     padding: 0 24px;
+     display: flex;
+     flex-wrap: wrap;
+ }
