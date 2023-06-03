@@ -34,7 +34,7 @@ body{
     /*atalho*/
     background: var(--bg-url)
     no-repeat top center /cover;
-    height: 100vh;
+    height: 110vh;
 }
 body *{
     font-family: 'Inter', sans-serif;
@@ -113,7 +113,7 @@ ul{
     list-style: none; /*sem pontos na lista*/
     display: flex;
     flex-direction: column; /*deixa os item em colunas ao inves de um ao lado do outro com o row*/
-    gap: 16px; /*espaço entre os elementos da caixa*/
+    gap: 12px; /*espaço entre os elementos da caixa*/
     padding: 24px 0; /*24 superior e inferior e 0 nas laterais*/
     
 }

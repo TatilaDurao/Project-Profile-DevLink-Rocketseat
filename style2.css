@@ -33,7 +33,7 @@ body{
      background-size: cover; /*cobrir */
      /*atalho*/
      background: var(--bg-url)
-     no-repeat top center /cover;
+     repeat top center /cover;
      height: 100vh;
  }
  body *{
@@ -48,9 +48,22 @@ body{
 #container{
     /* border: 1px solid red;*/
      width: 100%;
-     max-width: 1200px;
+     max-width: 950px;
      margin: 56px auto 0px auto; /*direção relogio top right bottom left*/
      padding: 0 24px;
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
  }
+
+.c:hover img{
+    transform: scale(1.2);
+}
+.c:hover h1{
+    transform: scale(1.2);
+}
+.c{
+    margin-top: 20px;
+}
+
+
